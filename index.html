@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Completo</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="form-container" class="form-container">
+      <form id="client-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="observation">Observação:</label>
+        <textarea id="observation" name="observation"></textarea>
+
+        <button type="submit" id="submit-button">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Tabela com dados -->
+    <div id="table-container" class="table-container hidden">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody id="client-data-body">
+        </tbody>
+      </table>
+      <button id="back-button">Voltar</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
